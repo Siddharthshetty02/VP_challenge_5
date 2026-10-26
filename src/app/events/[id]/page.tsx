@@ -1293,7 +1293,8 @@ export default function EventDetailPage() {
                     borderBottomRightRadius: msg.sender === "user" ? "2px" : "var(--radius-lg)",
                     borderBottomLeftRadius: msg.sender === "ai" ? "2px" : "var(--radius-lg)",
                     fontSize: "0.95rem",
-                    lineHeight: 1.5,
+                    lineHeight: 1.6,
+                    whiteSpace: "pre-wrap",
                   }}
                 >
                   {msg.text}
