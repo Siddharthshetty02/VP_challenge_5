@@ -27,7 +27,7 @@ export async function sendOpenRouterChat(
   eventContext: EventContextPayload
 ): Promise<string> {
   const apiKey = process.env.OPENROUTER_API_KEY;
-  const model = process.env.OPENROUTER_MODEL || "openai/gpt-4o-mini";
+  const model = process.env.OPENROUTER_MODEL || "openrouter/auto";
 
   if (!apiKey) {
     throw new Error("OPENROUTER_API_KEY is not configured");
@@ -75,7 +75,7 @@ GUIDELINES FOR YOUR RESPONSES:
       model,
       messages: formattedMessages,
       temperature: 0.7,
-      max_tokens: 1000,
+      max_tokens: 600,
     }),
   });
 
