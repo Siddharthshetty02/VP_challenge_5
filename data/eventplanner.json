@@ -1,0 +1,543 @@
+{
+  "events": [
+    {
+      "id": "event-wedding-01",
+      "name": "Sophia & Liam's Autumn Vineyard Wedding",
+      "type": "WEDDING",
+      "date": "2026-10-18T16:00:00.000Z",
+      "location": "St. Helena Vineyard Estate, Napa Valley, CA",
+      "guestCount": 120,
+      "totalBudget": 45000,
+      "description": "An elegant rustic autumnal celebration among golden vines, featuring farm-to-table cuisine, acoustic live music, and twilight fairy-light ambiance.",
+      "status": "PLANNING",
+      "createdAt": "2026-09-01T10:00:00.000Z",
+      "updatedAt": "2026-09-15T14:30:00.000Z"
+    },
+    {
+      "id": "event-birthday-02",
+      "name": "Maya's 30th Cyberpunk Rooftop Celebration",
+      "type": "BIRTHDAY",
+      "date": "2026-11-07T20:00:00.000Z",
+      "location": "Skyline Glasshouse Lounge, Downtown District",
+      "guestCount": 50,
+      "totalBudget": 7500,
+      "description": "An electrifying neon-cyberpunk milestone 30th bash with synthwave DJ, bespoke neon cocktail bar, holographic photo booth, and futuristic street food skewers.",
+      "status": "IN_PROGRESS",
+      "createdAt": "2026-09-10T12:00:00.000Z",
+      "updatedAt": "2026-09-20T16:45:00.000Z"
+    },
+    {
+      "id": "event-community-03",
+      "name": "Greenwood Valley Annual Harvest Festival & Maker Market",
+      "type": "COMMUNITY",
+      "date": "2026-10-24T10:00:00.000Z",
+      "location": "Greenwood Valley Community Park & Pavilion",
+      "guestCount": 850,
+      "totalBudget": 18000,
+      "description": "A free-entry public harvest festival featuring 40+ local artisan booths, pumpkin carving contests, live folk bands, cider pressing, and family scavenger hunts.",
+      "status": "IN_PROGRESS",
+      "createdAt": "2026-08-15T09:00:00.000Z",
+      "updatedAt": "2026-09-18T11:15:00.000Z"
+    }
+  ],
+  "budgetItems": [
+    {
+      "id": "b-01",
+      "eventId": "event-wedding-01",
+      "category": "VENUE",
+      "name": "Vineyard Estate Rental & Ceremony Lawn",
+      "estimated": 14000,
+      "actual": 13500,
+      "notes": "Includes tables, chairs, and barrel room for dance floor"
+    },
+    {
+      "id": "b-02",
+      "eventId": "event-wedding-01",
+      "category": "CATERING",
+      "name": "Farm-to-Table 3-Course Plated Dinner & Wine Pairing",
+      "estimated": 12500,
+      "actual": 12800,
+      "notes": "120 guests @ $105/person + wine pairing"
+    },
+    {
+      "id": "b-03",
+      "eventId": "event-wedding-01",
+      "category": "PHOTOGRAPHY",
+      "name": "10-Hour Photography & Drone Footage",
+      "estimated": 4200,
+      "actual": 4000,
+      "notes": "Includes engagement shoot and digital prints album"
+    },
+    {
+      "id": "b-04",
+      "eventId": "event-wedding-01",
+      "category": "FLOWERS",
+      "name": "Autumnal Floral Arches & Centerpieces",
+      "estimated": 3800,
+      "actual": 3600,
+      "notes": "Deep burgundy dahlias, eucalyptus, amber tea roses"
+    },
+    {
+      "id": "b-05",
+      "eventId": "event-wedding-01",
+      "category": "ENTERTAINMENT",
+      "name": "Acoustic String Trio + Evening Live 5-Piece Band",
+      "estimated": 4500,
+      "actual": 4500,
+      "notes": "Ceremony strings and high-energy dinner/party band"
+    },
+    {
+      "id": "b-06",
+      "eventId": "event-wedding-01",
+      "category": "ATTIRE",
+      "name": "Bespoke Suit & Bridal Gown Alterations",
+      "estimated": 3200,
+      "actual": 2900,
+      "notes": "Veil, accessories, and shoes included"
+    },
+    {
+      "id": "b-07",
+      "eventId": "event-wedding-01",
+      "category": "TRANSPORTATION",
+      "name": "Guest Shuttles from Napa Hotels",
+      "estimated": 1500,
+      "actual": null,
+      "notes": "Two 30-passenger luxury coach shuttles"
+    },
+    {
+      "id": "b-08",
+      "eventId": "event-wedding-01",
+      "category": "STATIONERY",
+      "name": "Wax-Sealed Foil Invitations & Menu Cards",
+      "estimated": 800,
+      "actual": 750,
+      "notes": "Pressed autumn leaf design"
+    },
+    {
+      "id": "b-09",
+      "eventId": "event-wedding-01",
+      "category": "MISCELLANEOUS",
+      "name": "Emergency Kit, Gratuities & Marriage License",
+      "estimated": 500,
+      "actual": 350,
+      "notes": "Buffer fund"
+    },
+    {
+      "id": "b-10",
+      "eventId": "event-birthday-02",
+      "category": "VENUE",
+      "name": "Rooftop Glasshouse Lounge Buyout (6h)",
+      "estimated": 2500,
+      "actual": 2500,
+      "notes": "Includes panoramic city views and existing lounge seating"
+    },
+    {
+      "id": "b-11",
+      "eventId": "event-birthday-02",
+      "category": "CATERING",
+      "name": "Gourmet Asian Street Food Skewers & Dim Sum",
+      "estimated": 2000,
+      "actual": 1950,
+      "notes": "Bao buns, yakitori, vegetarian gyoza"
+    },
+    {
+      "id": "b-12",
+      "eventId": "event-birthday-02",
+      "category": "ENTERTAINMENT",
+      "name": "Synthwave DJ & Custom Laser Lighting Rig",
+      "estimated": 1400,
+      "actual": 1400,
+      "notes": "4-hour DJ set with custom cyber visuals"
+    },
+    {
+      "id": "b-13",
+      "eventId": "event-birthday-02",
+      "category": "DECORATION",
+      "name": "Custom LED Neon Signs & Cyberpunk Balloon Clouds",
+      "estimated": 900,
+      "actual": 850,
+      "notes": "'Maya 30.0' neon sign centerpiece"
+    },
+    {
+      "id": "b-14",
+      "eventId": "event-birthday-02",
+      "category": "PHOTOGRAPHY",
+      "name": "Retro Polaroid & Mirror Photo Booth",
+      "estimated": 700,
+      "actual": 650,
+      "notes": "Instant print guestbook with cyber props"
+    },
+    {
+      "id": "b-15",
+      "eventId": "event-community-03",
+      "category": "VENUE",
+      "name": "City Park Special Event Permit & Park Ranger Fee",
+      "estimated": 1800,
+      "actual": 1800,
+      "notes": "Approved municipal park use permit"
+    },
+    {
+      "id": "b-16",
+      "eventId": "event-community-03",
+      "category": "ENTERTAINMENT",
+      "name": "Stage Audio System, 3 Local Bands & Sound Engineer",
+      "estimated": 3600,
+      "actual": 3400,
+      "notes": "Full-day stage entertainment program"
+    },
+    {
+      "id": "b-17",
+      "eventId": "event-community-03",
+      "category": "DECORATION",
+      "name": "Hay Bales, Autumn Bunting & Directional Signage",
+      "estimated": 1200,
+      "actual": 1100,
+      "notes": "Eco-friendly compostable signage"
+    },
+    {
+      "id": "b-18",
+      "eventId": "event-community-03",
+      "category": "MISCELLANEOUS",
+      "name": "Portable Restrooms, Handwash Stations & Waste Dumpsters",
+      "estimated": 3200,
+      "actual": 3100,
+      "notes": "Sanitation compliance for 1000+ attendance"
+    },
+    {
+      "id": "b-19",
+      "eventId": "event-community-03",
+      "category": "STATIONERY",
+      "name": "Flyers, Community Banners & Park Maps",
+      "estimated": 1500,
+      "actual": 1400,
+      "notes": "Printed on recycled kraft paper"
+    },
+    {
+      "id": "b-20",
+      "eventId": "event-community-03",
+      "category": "TRANSPORTATION",
+      "name": "Volunteer Golf Carts & Traffic Cones Rental",
+      "estimated": 900,
+      "actual": 850,
+      "notes": "For senior citizen mobility and parking crew"
+    }
+  ],
+  "milestones": [
+    {
+      "id": "m-01",
+      "eventId": "event-wedding-01",
+      "title": "Lock in Vineyard Venue & Date",
+      "description": "Sign estate lease and pay initial reservation deposit.",
+      "dueDate": "2026-03-01T00:00:00.000Z",
+      "completed": true,
+      "phase": "INITIAL",
+      "sortOrder": 1
+    },
+    {
+      "id": "m-02",
+      "eventId": "event-wedding-01",
+      "title": "Book Photographer and Drone Crew",
+      "description": "Review portfolios and confirm golden-hour shot list.",
+      "dueDate": "2026-04-15T00:00:00.000Z",
+      "completed": true,
+      "phase": "BOOKING",
+      "sortOrder": 2
+    },
+    {
+      "id": "m-03",
+      "eventId": "event-wedding-01",
+      "title": "Finalize Tasting Menu & Wine Selection",
+      "description": "Menu tasting session with Head Chef at the estate.",
+      "dueDate": "2026-07-20T00:00:00.000Z",
+      "completed": true,
+      "phase": "PREPARATION",
+      "sortOrder": 3
+    },
+    {
+      "id": "m-04",
+      "eventId": "event-wedding-01",
+      "title": "Send Formal Foil Invitations",
+      "description": "Track RSVPs and capture meal preference dietary notes.",
+      "dueDate": "2026-08-01T00:00:00.000Z",
+      "completed": true,
+      "phase": "PREPARATION",
+      "sortOrder": 4
+    },
+    {
+      "id": "m-05",
+      "eventId": "event-wedding-01",
+      "title": "Final RSVP Count to Caterer",
+      "description": "Submit confirmed 120 head count and seating chart.",
+      "dueDate": "2026-10-01T00:00:00.000Z",
+      "completed": false,
+      "phase": "WEEK_OF",
+      "sortOrder": 5
+    },
+    {
+      "id": "m-06",
+      "eventId": "event-wedding-01",
+      "title": "Ceremony Rehearsal & Welcome Dinner",
+      "description": "Walkthrough with bridal party and parents at 5 PM.",
+      "dueDate": "2026-10-17T17:00:00.000Z",
+      "completed": false,
+      "phase": "WEEK_OF",
+      "sortOrder": 6
+    },
+    {
+      "id": "m-07",
+      "eventId": "event-wedding-01",
+      "title": "Wedding Day Execution",
+      "description": "Vendor load-in at 10 AM, guest arrival 3:30 PM, ceremony 4 PM.",
+      "dueDate": "2026-10-18T10:00:00.000Z",
+      "completed": false,
+      "phase": "DAY_OF",
+      "sortOrder": 7
+    },
+    {
+      "id": "m-08",
+      "eventId": "event-birthday-02",
+      "title": "Confirm Rooftop Booking & Bar Minimum",
+      "description": "Signed agreement for exclusive terrace buyout.",
+      "dueDate": "2026-09-15T00:00:00.000Z",
+      "completed": true,
+      "phase": "INITIAL",
+      "sortOrder": 1
+    },
+    {
+      "id": "m-09",
+      "eventId": "event-birthday-02",
+      "title": "Commission Neon Sign 'Maya 30.0'",
+      "description": "Approve mockup and order bespoke pink/cyan LED neon.",
+      "dueDate": "2026-10-05T00:00:00.000Z",
+      "completed": true,
+      "phase": "BOOKING",
+      "sortOrder": 2
+    },
+    {
+      "id": "m-10",
+      "eventId": "event-birthday-02",
+      "title": "Finalize DJ Synthwave Playlist & Cue Times",
+      "description": "",
+      "dueDate": "2026-10-25T00:00:00.000Z",
+      "completed": true,
+      "phase": "PREPARATION",
+      "sortOrder": 0
+    },
+    {
+      "id": "m-11",
+      "eventId": "event-birthday-02",
+      "title": "Door Host & Wristband Setup",
+      "description": "Private elevator access code for rooftop guests.",
+      "dueDate": "2026-11-07T19:00:00.000Z",
+      "completed": false,
+      "phase": "DAY_OF",
+      "sortOrder": 4
+    },
+    {
+      "id": "m-12",
+      "eventId": "event-community-03",
+      "title": "Submit City Parks Department Permit",
+      "description": "Include sound variance and emergency egress map.",
+      "dueDate": "2026-08-20T00:00:00.000Z",
+      "completed": true,
+      "phase": "INITIAL",
+      "sortOrder": 1
+    },
+    {
+      "id": "m-13",
+      "eventId": "event-community-03",
+      "title": "Curate 40 Artisan Vendor Applications",
+      "description": "Review maker applications and send booth acceptance emails.",
+      "dueDate": "2026-09-25T00:00:00.000Z",
+      "completed": true,
+      "phase": "BOOKING",
+      "sortOrder": 2
+    },
+    {
+      "id": "m-14",
+      "eventId": "event-community-03",
+      "title": "Volunteer Briefing & Walkie-Talkie Check",
+      "description": "Coordinate 35 neighborhood volunteer marshals.",
+      "dueDate": "2026-10-23T18:00:00.000Z",
+      "completed": false,
+      "phase": "WEEK_OF",
+      "sortOrder": 3
+    },
+    {
+      "id": "m-15",
+      "eventId": "event-community-03",
+      "title": "Festival Morning Setup & Booth Load-In",
+      "description": "Vendor load-in opens at 7 AM; public gates open at 10 AM.",
+      "dueDate": "2026-10-24T07:00:00.000Z",
+      "completed": false,
+      "phase": "DAY_OF",
+      "sortOrder": 4
+    }
+  ],
+  "vendors": [
+    {
+      "id": "v-01",
+      "eventId": "event-wedding-01",
+      "name": "Valley Oak Harvest Catering",
+      "category": "Catering",
+      "contact": "Chef Marcus Vance",
+      "email": "chef@valleyoaknapa.com",
+      "phone": "(707) 555-0142",
+      "cost": 12800,
+      "status": "BOOKED",
+      "notes": "Award-winning wine country seasonal menu. Deposit paid.",
+      "rating": 5
+    },
+    {
+      "id": "v-02",
+      "eventId": "event-wedding-01",
+      "name": "Golden Light Cinema & Photo",
+      "category": "Photography",
+      "contact": "Elena Rostova",
+      "email": "elena@goldenlightphoto.com",
+      "phone": "(415) 555-0198",
+      "cost": 4000,
+      "status": "BOOKED",
+      "notes": "Shoots with vintage Leica + 4K aerial drone.",
+      "rating": 5
+    },
+    {
+      "id": "v-03",
+      "eventId": "event-wedding-01",
+      "name": "Wildflower & Thistle Florals",
+      "category": "Flowers",
+      "contact": "Chloe Bennett",
+      "email": "chloe@wildflowerthistle.com",
+      "phone": "(707) 555-0177",
+      "cost": 3600,
+      "status": "BOOKED",
+      "notes": "Local sustainable organic blooms with copper accents.",
+      "rating": 4
+    },
+    {
+      "id": "v-04",
+      "eventId": "event-wedding-01",
+      "name": "The Midnight Groove Band",
+      "category": "Entertainment",
+      "contact": "David 'Groove' Evans",
+      "email": "booking@midnightgroove.live",
+      "phone": "(510) 555-0133",
+      "cost": 4500,
+      "status": "BOOKED",
+      "notes": "5-piece funk, soul, pop cover band with horn section.",
+      "rating": 5
+    },
+    {
+      "id": "v-05",
+      "eventId": "event-wedding-01",
+      "name": "Napa Valley Executive Shuttles",
+      "category": "Transportation",
+      "contact": "Operations Desk",
+      "email": "charters@napashuttles.com",
+      "phone": "(707) 555-0111",
+      "cost": 1500,
+      "status": "QUOTED",
+      "notes": "Awaiting final pickup route itinerary.",
+      "rating": 4
+    },
+    {
+      "id": "v-06",
+      "eventId": "event-birthday-02",
+      "name": "Skyline Lounge Events",
+      "category": "Venue",
+      "contact": "Sarah Chen",
+      "email": "events@skylinelounge.com",
+      "phone": "(415) 555-0210",
+      "cost": 2500,
+      "status": "PAID",
+      "notes": "Full glasshouse rooftop buyout, sound system included.",
+      "rating": 5
+    },
+    {
+      "id": "v-07",
+      "eventId": "event-birthday-02",
+      "name": "Bao & Blade Night Market",
+      "category": "Catering",
+      "contact": "Chef Tony Li",
+      "email": "tony@baoblade.com",
+      "phone": "(415) 555-0245",
+      "cost": 1950,
+      "status": "BOOKED",
+      "notes": "Live steam bun bar and glazed pork belly skewers.",
+      "rating": 5
+    },
+    {
+      "id": "v-08",
+      "eventId": "event-birthday-02",
+      "name": "DJ Kai (Neon Beat Lab)",
+      "category": "Entertainment",
+      "contact": "Kai Sorenson",
+      "email": "kai@neonbeatlab.io",
+      "phone": "(415) 555-0288",
+      "cost": 1400,
+      "status": "BOOKED",
+      "notes": "Cyberpunk visuals synced to custom audio tracks.",
+      "rating": 5
+    },
+    {
+      "id": "v-09",
+      "eventId": "event-community-03",
+      "name": "Valley Acoustic Pro Audio",
+      "category": "AV & Sound",
+      "contact": "Jim Bradley",
+      "email": "sound@valleyacoustic.org",
+      "phone": "(510) 555-0312",
+      "cost": 3400,
+      "status": "BOOKED",
+      "notes": "Outdoor stage PA, microphones, generator power.",
+      "rating": 4
+    },
+    {
+      "id": "v-10",
+      "eventId": "event-community-03",
+      "name": "GreenWaste Eco Solutions",
+      "category": "Sanitation",
+      "contact": "Carla Gomez",
+      "email": "events@greenwaste.org",
+      "phone": "(510) 555-0374",
+      "cost": 3100,
+      "status": "BOOKED",
+      "notes": "Eco compost and recycle sort stations with on-site staff.",
+      "rating": 4
+    }
+  ],
+  "aiSuggestions": [
+    {
+      "id": "ai-14571ed4",
+      "eventId": "event-birthday-02",
+      "type": "plan",
+      "content": "{\"budgetBreakdown\":[{\"category\":\"VENUE\",\"name\":\"Lounge or Terrace Private Rental\",\"estimatedCost\":1750,\"percentOfBudget\":35,\"notes\":\"Private space with AV and lounge seating\"},{\"category\":\"CATERING\",\"name\":\"Passed Hors D'oeuvres & Drinks (60 guests)\",\"estimatedCost\":1500,\"percentOfBudget\":30,\"notes\":\"Gourmet sliders, skewers, charcuterie & signature punch\"},{\"category\":\"ENTERTAINMENT\",\"name\":\"DJ, Lighting & Sound System\",\"estimatedCost\":750,\"percentOfBudget\":15,\"notes\":\"Curated party playlist with dance floor lighting\"},{\"category\":\"DECORATION\",\"name\":\"Custom Neon Sign & Balloon Installation\",\"estimatedCost\":500,\"percentOfBudget\":10,\"notes\":\"Personalized backdrop for photo opportunities\"},{\"category\":\"PHOTOGRAPHY\",\"name\":\"Instant Mirror / 360 Photo Booth\",\"estimatedCost\":350,\"percentOfBudget\":7,\"notes\":\"Unlimited digital sharing and printed keepsake strips\"},{\"category\":\"MISCELLANEOUS\",\"name\":\"Custom Birthday Cake & Party Favors\",\"estimatedCost\":150,\"percentOfBudget\":3,\"notes\":\"Sculpted bakery cake with sparkler candles\"}],\"timeline\":[{\"phase\":\"INITIAL\",\"title\":\"Select Theme & Book Private Party Space\",\"description\":\"Confirm date, headcount estimate, and venue deposit.\",\"daysBeforeEvent\":45},{\"phase\":\"BOOKING\",\"title\":\"Lock in DJ, Bartender & Photo Booth\",\"description\":\"Send playlist preferences and drink ingredient requests.\",\"daysBeforeEvent\":30},{\"phase\":\"PREPARATION\",\"title\":\"Send Digital Invitations with RSVP Link\",\"description\":\"Collect music song requests and dietary preferences.\",\"daysBeforeEvent\":21},{\"phase\":\"WEEK_OF\",\"title\":\"Pick Up Decor & Finalize Drink Menu\",\"description\":\"Confirm final head count with catering and venue staff.\",\"daysBeforeEvent\":3},{\"phase\":\"DAY_OF\",\"title\":\"Party Celebration!\",\"description\":\"Host arrival 1 hour early for sound check and cake drop-off.\",\"daysBeforeEvent\":0}],\"vendorChecklist\":[{\"category\":\"Venue\",\"name\":\"Boutique Rooftop or Loft Space\",\"priority\":\"HIGH\",\"estimatedCost\":1750,\"bookByDaysBeforeEvent\":45},{\"category\":\"Catering\",\"name\":\"Mobile Craft Cocktail & Tapas Bar\",\"priority\":\"HIGH\",\"estimatedCost\":1500,\"bookByDaysBeforeEvent\":30},{\"category\":\"Entertainment\",\"name\":\"Club & Open-Format Party DJ\",\"priority\":\"MEDIUM\",\"estimatedCost\":750,\"bookByDaysBeforeEvent\":25},{\"category\":\"Photo Booth\",\"name\":\"Glam Mirror Photo Booth\",\"priority\":\"MEDIUM\",\"estimatedCost\":350,\"bookByDaysBeforeEvent\":20}],\"creativeIdeas\":[{\"title\":\"Bespoke Birthday Cocktail Flight\",\"description\":\"Three mini craft cocktails themed after milestones from the celebrant's life.\",\"estimatedCost\":250,\"category\":\"Food & Drink\"},{\"title\":\"Illuminated Custom Neon Backdrop\",\"description\":\"Bright neon quote sign set against a lush greenery wall for viral social media photos.\",\"estimatedCost\":350,\"category\":\"Decor\"},{\"title\":\"Midnight Snack Delivery Surprise\",\"description\":\"Surprise hot late-night mini burger sliders or churros brought out on neon trays.\",\"estimatedCost\":300,\"category\":\"Food & Drink\"}],\"tips\":[\"Include an open box on invitations asking guests to submit their favorite dance song.\",\"Set up an ambient hydration station with citrus-infused waters to keep energy high all night.\",\"Have the birthday cake cut and sliced behind the scenes for effortless self-serve dessert display.\"]}",
+      "prompt": "Plan for BIRTHDAY with 60 guests, budget $5000",
+      "createdAt": "2026-10-26T16:18:03.199Z"
+    },
+    {
+      "id": "ai-749dd976",
+      "eventId": "event-wedding-01",
+      "type": "idea",
+      "content": "{\"creativeIdeas\":[{\"title\":\"Audio Guestbook Rotary Phone\",\"description\":\"Vintage telephone station where guests record heartfelt spoken voice messages and toasts.\",\"estimatedCost\":350,\"category\":\"Guest Favors\"},{\"title\":\"Twilight Champagne Tower Pour\",\"description\":\"Dramatic coupe champagne tower poured during sunset speeches under warm twinkle lights.\",\"estimatedCost\":450,\"category\":\"Food & Drink\"},{\"title\":\"Live Event Painter\",\"description\":\"An artist paints the first dance live on canvas, creating an instant family heirloom for guests to watch.\",\"estimatedCost\":1200,\"category\":\"Entertainment\"}],\"signatureDrinkOrSnack\":\"Golden Hour Bellini & Truffle Crostini\",\"recommendedColorPalette\":[\"#6366f1\",\"#ec4899\",\"#f59e0b\",\"#10b981\"],\"playlistVibe\":\"Curated ambient lounge into celebratory peak-hour anthems\",\"source\":\"fallback\"}",
+      "prompt": "Ideas for WEDDING: Rustic outdoor",
+      "createdAt": "2026-10-26T16:17:10.976Z"
+    },
+    {
+      "id": "ai-01",
+      "eventId": "event-wedding-01",
+      "type": "plan",
+      "prompt": "Generate wedding plan for 120 guests with $45,000 budget in Napa Valley vineyard",
+      "content": "{\"summary\":\"A seamless romantic celebration accentuating Napa's golden hour light with farm-to-table cuisine and acoustic harmony.\",\"keyRecommendations\":[\"Opt for an early ceremony (4:00 PM) to capture golden hour vineyard portraits before sunset.\",\"Utilize family-style wine pairing to encourage guest conversation at long rustic wooden tables.\",\"Install soft festoon lighting across the outdoor trellis to reduce auxiliary generator needs.\"]}",
+      "createdAt": "2026-09-01T10:05:00.000Z"
+    },
+    {
+      "id": "ai-02",
+      "eventId": "event-birthday-02",
+      "type": "idea",
+      "prompt": "Generate cyberpunk rooftop 30th birthday themes and activities",
+      "content": "{\"cocktails\":[\"The Neon Matrix (butterfly pea gin + tonic glow)\",\"Cyber-Mule (spiced ginger beer + edible silver shimmer)\"],\"experiences\":[\"Glow-in-the-dark temporary cyber tattoo station\",\"Retro arcade CRT cabinet tournament (Street Fighter / Tetris)\"],\"playlistMood\":\"Carpenter Brut, The Midnight, Gunship, Kavinsky\"}",
+      "createdAt": "2026-09-10T12:10:00.000Z"
+    }
+  ]
+}
