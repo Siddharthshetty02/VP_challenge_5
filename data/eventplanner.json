@@ -220,6 +220,60 @@
       "estimated": 900,
       "actual": 850,
       "notes": "For senior citizen mobility and parking crew"
+    },
+    {
+      "id": "b-c665db01",
+      "eventId": "event-birthday-02",
+      "category": "VENUE",
+      "name": "Lounge or Terrace Private Rental",
+      "estimated": 2625,
+      "actual": null,
+      "notes": "Private space with AV and lounge seating"
+    },
+    {
+      "id": "b-c76cb3dc",
+      "eventId": "event-birthday-02",
+      "category": "CATERING",
+      "name": "Passed Hors D'oeuvres & Drinks (50 guests)",
+      "estimated": 2250,
+      "actual": null,
+      "notes": "Gourmet sliders, skewers, charcuterie & signature punch"
+    },
+    {
+      "id": "b-ada0a9c1",
+      "eventId": "event-birthday-02",
+      "category": "ENTERTAINMENT",
+      "name": "DJ, Lighting & Sound System",
+      "estimated": 1125,
+      "actual": null,
+      "notes": "Curated party playlist with dance floor lighting"
+    },
+    {
+      "id": "b-fbfbe5ca",
+      "eventId": "event-birthday-02",
+      "category": "DECORATION",
+      "name": "Custom Neon Sign & Balloon Installation",
+      "estimated": 750,
+      "actual": null,
+      "notes": "Personalized backdrop for photo opportunities"
+    },
+    {
+      "id": "b-fec359e4",
+      "eventId": "event-birthday-02",
+      "category": "PHOTOGRAPHY",
+      "name": "Instant Mirror / 360 Photo Booth",
+      "estimated": 525,
+      "actual": null,
+      "notes": "Unlimited digital sharing and printed keepsake strips"
+    },
+    {
+      "id": "b-336535c4",
+      "eventId": "event-birthday-02",
+      "category": "MISCELLANEOUS",
+      "name": "Custom Birthday Cake & Party Favors",
+      "estimated": 225,
+      "actual": null,
+      "notes": "Sculpted bakery cake with sparkler candles"
     }
   ],
   "milestones": [
@@ -327,11 +381,11 @@
       "id": "m-11",
       "eventId": "event-birthday-02",
       "title": "Door Host & Wristband Setup",
-      "description": "Private elevator access code for rooftop guests.",
+      "description": "",
       "dueDate": "2026-11-07T19:00:00.000Z",
       "completed": false,
       "phase": "DAY_OF",
-      "sortOrder": 4
+      "sortOrder": 0
     },
     {
       "id": "m-12",
@@ -372,6 +426,56 @@
       "completed": false,
       "phase": "DAY_OF",
       "sortOrder": 4
+    },
+    {
+      "id": "m-f4595d64",
+      "eventId": "event-birthday-02",
+      "title": "Select Theme & Book Private Party Space",
+      "description": "Confirm date, headcount estimate, and venue deposit.",
+      "dueDate": "2026-09-23T20:00:00.000Z",
+      "completed": false,
+      "phase": "INITIAL",
+      "sortOrder": 1
+    },
+    {
+      "id": "m-77a16e3a",
+      "eventId": "event-birthday-02",
+      "title": "Lock in DJ, Bartender & Photo Booth",
+      "description": "Send playlist preferences and drink ingredient requests.",
+      "dueDate": "2026-10-08T20:00:00.000Z",
+      "completed": false,
+      "phase": "BOOKING",
+      "sortOrder": 2
+    },
+    {
+      "id": "m-07dc1301",
+      "eventId": "event-birthday-02",
+      "title": "Send Digital Invitations with RSVP Link",
+      "description": "Collect music song requests and dietary preferences.",
+      "dueDate": "2026-10-17T20:00:00.000Z",
+      "completed": false,
+      "phase": "PREPARATION",
+      "sortOrder": 3
+    },
+    {
+      "id": "m-26b5e340",
+      "eventId": "event-birthday-02",
+      "title": "Pick Up Decor & Finalize Drink Menu",
+      "description": "Confirm final head count with catering and venue staff.",
+      "dueDate": "2026-11-04T20:00:00.000Z",
+      "completed": false,
+      "phase": "WEEK_OF",
+      "sortOrder": 4
+    },
+    {
+      "id": "m-f72b18af",
+      "eventId": "event-birthday-02",
+      "title": "Party Celebration!",
+      "description": "Host arrival 1 hour early for sound check and cake drop-off.",
+      "dueDate": "2026-11-07T20:00:00.000Z",
+      "completed": false,
+      "phase": "DAY_OF",
+      "sortOrder": 5
     }
   ],
   "vendors": [
@@ -504,9 +608,77 @@
       "status": "BOOKED",
       "notes": "Eco compost and recycle sort stations with on-site staff.",
       "rating": 4
+    },
+    {
+      "id": "v-42e34ece",
+      "eventId": "event-birthday-02",
+      "name": "Boutique Rooftop or Loft Space",
+      "category": "Venue",
+      "contact": "",
+      "email": "",
+      "phone": "",
+      "cost": 2625,
+      "status": "RESEARCHING",
+      "notes": "Recommended by GenAI Assistant",
+      "rating": null
+    },
+    {
+      "id": "v-b71811b9",
+      "eventId": "event-birthday-02",
+      "name": "Mobile Craft Cocktail & Tapas Bar",
+      "category": "Catering",
+      "contact": "",
+      "email": "",
+      "phone": "",
+      "cost": 2250,
+      "status": "RESEARCHING",
+      "notes": "Recommended by GenAI Assistant",
+      "rating": null
+    },
+    {
+      "id": "v-d471500a",
+      "eventId": "event-birthday-02",
+      "name": "Club & Open-Format Party DJ",
+      "category": "Entertainment",
+      "contact": "",
+      "email": "",
+      "phone": "",
+      "cost": 1125,
+      "status": "RESEARCHING",
+      "notes": "Recommended by GenAI Assistant",
+      "rating": null
+    },
+    {
+      "id": "v-2767f0c0",
+      "eventId": "event-birthday-02",
+      "name": "Glam Mirror Photo Booth",
+      "category": "Photo Booth",
+      "contact": "",
+      "email": "",
+      "phone": "",
+      "cost": 525,
+      "status": "RESEARCHING",
+      "notes": "Recommended by GenAI Assistant",
+      "rating": null
     }
   ],
   "aiSuggestions": [
+    {
+      "id": "ai-6fa278ed",
+      "eventId": "event-birthday-02",
+      "type": "idea",
+      "content": "{\"creativeIdeas\":[{\"title\":\"Bespoke Birthday Cocktail Flight\",\"description\":\"Three mini craft cocktails themed after milestones from the celebrant's life.\",\"estimatedCost\":250,\"category\":\"Food & Drink\"},{\"title\":\"Illuminated Custom Neon Backdrop\",\"description\":\"Bright neon quote sign set against a lush greenery wall for viral social media photos.\",\"estimatedCost\":350,\"category\":\"Decor\"},{\"title\":\"Midnight Snack Delivery Surprise\",\"description\":\"Surprise hot late-night mini burger sliders or churros brought out on neon trays.\",\"estimatedCost\":300,\"category\":\"Food & Drink\"}],\"signatureDrinkOrSnack\":\"Neon Cyber Citrus Fizz\",\"recommendedColorPalette\":[\"#6366f1\",\"#ec4899\",\"#f59e0b\",\"#10b981\"],\"playlistVibe\":\"Curated ambient lounge into celebratory peak-hour anthems\",\"source\":\"fallback\"}",
+      "prompt": "Ideas for BIRTHDAY: An electrifying neon-cyberpunk milestone 30th bash with synthwave DJ, bespoke neon cocktail bar, holographic photo booth, and futuristic street food skewers.",
+      "createdAt": "2026-10-26T16:53:42.246Z"
+    },
+    {
+      "id": "ai-90eec92d",
+      "eventId": "event-birthday-02",
+      "type": "plan",
+      "content": "{\"budgetBreakdown\":[{\"category\":\"VENUE\",\"name\":\"Lounge or Terrace Private Rental\",\"estimatedCost\":2625,\"percentOfBudget\":35,\"notes\":\"Private space with AV and lounge seating\"},{\"category\":\"CATERING\",\"name\":\"Passed Hors D'oeuvres & Drinks (50 guests)\",\"estimatedCost\":2250,\"percentOfBudget\":30,\"notes\":\"Gourmet sliders, skewers, charcuterie & signature punch\"},{\"category\":\"ENTERTAINMENT\",\"name\":\"DJ, Lighting & Sound System\",\"estimatedCost\":1125,\"percentOfBudget\":15,\"notes\":\"Curated party playlist with dance floor lighting\"},{\"category\":\"DECORATION\",\"name\":\"Custom Neon Sign & Balloon Installation\",\"estimatedCost\":750,\"percentOfBudget\":10,\"notes\":\"Personalized backdrop for photo opportunities\"},{\"category\":\"PHOTOGRAPHY\",\"name\":\"Instant Mirror / 360 Photo Booth\",\"estimatedCost\":525,\"percentOfBudget\":7,\"notes\":\"Unlimited digital sharing and printed keepsake strips\"},{\"category\":\"MISCELLANEOUS\",\"name\":\"Custom Birthday Cake & Party Favors\",\"estimatedCost\":225,\"percentOfBudget\":3,\"notes\":\"Sculpted bakery cake with sparkler candles\"}],\"timeline\":[{\"phase\":\"INITIAL\",\"title\":\"Select Theme & Book Private Party Space\",\"description\":\"Confirm date, headcount estimate, and venue deposit.\",\"daysBeforeEvent\":45},{\"phase\":\"BOOKING\",\"title\":\"Lock in DJ, Bartender & Photo Booth\",\"description\":\"Send playlist preferences and drink ingredient requests.\",\"daysBeforeEvent\":30},{\"phase\":\"PREPARATION\",\"title\":\"Send Digital Invitations with RSVP Link\",\"description\":\"Collect music song requests and dietary preferences.\",\"daysBeforeEvent\":21},{\"phase\":\"WEEK_OF\",\"title\":\"Pick Up Decor & Finalize Drink Menu\",\"description\":\"Confirm final head count with catering and venue staff.\",\"daysBeforeEvent\":3},{\"phase\":\"DAY_OF\",\"title\":\"Party Celebration!\",\"description\":\"Host arrival 1 hour early for sound check and cake drop-off.\",\"daysBeforeEvent\":0}],\"vendorChecklist\":[{\"category\":\"Venue\",\"name\":\"Boutique Rooftop or Loft Space\",\"priority\":\"HIGH\",\"estimatedCost\":2625,\"bookByDaysBeforeEvent\":45},{\"category\":\"Catering\",\"name\":\"Mobile Craft Cocktail & Tapas Bar\",\"priority\":\"HIGH\",\"estimatedCost\":2250,\"bookByDaysBeforeEvent\":30},{\"category\":\"Entertainment\",\"name\":\"Club & Open-Format Party DJ\",\"priority\":\"MEDIUM\",\"estimatedCost\":1125,\"bookByDaysBeforeEvent\":25},{\"category\":\"Photo Booth\",\"name\":\"Glam Mirror Photo Booth\",\"priority\":\"MEDIUM\",\"estimatedCost\":525,\"bookByDaysBeforeEvent\":20}],\"creativeIdeas\":[{\"title\":\"Bespoke Birthday Cocktail Flight\",\"description\":\"Three mini craft cocktails themed after milestones from the celebrant's life.\",\"estimatedCost\":250,\"category\":\"Food & Drink\"},{\"title\":\"Illuminated Custom Neon Backdrop\",\"description\":\"Bright neon quote sign set against a lush greenery wall for viral social media photos.\",\"estimatedCost\":350,\"category\":\"Decor\"},{\"title\":\"Midnight Snack Delivery Surprise\",\"description\":\"Surprise hot late-night mini burger sliders or churros brought out on neon trays.\",\"estimatedCost\":300,\"category\":\"Food & Drink\"}],\"tips\":[\"Include an open box on invitations asking guests to submit their favorite dance song.\",\"Set up an ambient hydration station with citrus-infused waters to keep energy high all night.\",\"Have the birthday cake cut and sliced behind the scenes for effortless self-serve dessert display.\"]}",
+      "prompt": "Plan for BIRTHDAY with 50 guests, budget $7500",
+      "createdAt": "2026-10-26T16:53:23.994Z"
+    },
     {
       "id": "ai-14571ed4",
       "eventId": "event-birthday-02",

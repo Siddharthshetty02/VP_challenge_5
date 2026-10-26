@@ -6,6 +6,7 @@
 
 import fs from "fs";
 import path from "path";
+import os from "os";
 import { v4 as uuidv4 } from "uuid";
 import type { Event, CreateEventInput, UpdateEventInput, EventWithDetails } from "../../types/event.ts";
 import type { BudgetItem, CreateBudgetInput, BudgetCategory } from "../../types/budget.ts";
@@ -22,7 +23,11 @@ export interface DatabaseSchema {
   aiSuggestions: AISuggestion[];
 }
 
-const DATA_DIR = path.join(process.cwd(), "data");
+const IS_VERCEL = !!process.env.VERCEL;
+const BUNDLED_DB_FILE = path.join(process.cwd(), "data", "eventplanner.json");
+const DATA_DIR = IS_VERCEL
+  ? path.join(os.tmpdir(), "eventgenie-data")
+  : path.join(process.cwd(), "data");
 const DB_FILE = path.join(DATA_DIR, "eventplanner.json");
 
 /** In-memory cached database instance */
@@ -192,9 +197,21 @@ function loadDatabase(): DatabaseSchema {
     if (fs.existsSync(DB_FILE)) {
       const raw = fs.readFileSync(DB_FILE, "utf-8");
       memoryDb = JSON.parse(raw);
+    } else if (fs.existsSync(BUNDLED_DB_FILE)) {
+      const raw = fs.readFileSync(BUNDLED_DB_FILE, "utf-8");
+      memoryDb = JSON.parse(raw);
+      try {
+        fs.writeFileSync(DB_FILE, raw, "utf-8");
+      } catch {
+        // Ignored in read-only environments
+      }
     } else {
       const seed = createSeedData();
-      fs.writeFileSync(DB_FILE, JSON.stringify(seed, null, 2), "utf-8");
+      try {
+        fs.writeFileSync(DB_FILE, JSON.stringify(seed, null, 2), "utf-8");
+      } catch {
+        // Ignored
+      }
       memoryDb = seed;
     }
   } catch (err) {
