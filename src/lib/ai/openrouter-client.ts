@@ -22,6 +22,37 @@ export interface EventContextPayload {
   vendorsSummary?: string;
 }
 
+/**
+ * Strips all asterisks (bold/italic markdown) and formats text into clean bullet points.
+ */
+export function cleanAndRefinePoints(text: string): string {
+  if (!text) return "";
+
+  // 1. Remove markdown bold (**text**) and italics (*text*) while preserving the words
+  let cleaned = text.replace(/\*{1,3}([^*]+)\*{1,3}/g, "$1");
+
+  // 2. Remove any remaining stray asterisks
+  cleaned = cleaned.replace(/\*/g, "");
+
+  // 3. Format lines into clean, consistent bullet points
+  cleaned = cleaned
+    .split("\n")
+    .map((line) => {
+      const trimmed = line.trim();
+      // If line begins with a dash, replace with a clean round bullet
+      if (/^[-–—]\s+/.test(trimmed)) {
+        return "• " + trimmed.replace(/^[-–—]\s+/, "");
+      }
+      return line;
+    })
+    .join("\n");
+
+  // 4. Normalize excessive newlines
+  cleaned = cleaned.replace(/\n{3,}/g, "\n\n").trim();
+
+  return cleaned;
+}
+
 export async function sendOpenRouterChat(
   messages: Array<{ sender: "user" | "ai"; text: string }>,
   eventContext: EventContextPayload
@@ -48,12 +79,11 @@ ${eventContext.budgetBreakdownSummary ? `- Current Budget Status: ${eventContext
 ${eventContext.milestonesSummary ? `- Timeline Milestones: ${eventContext.milestonesSummary}` : ""}
 ${eventContext.vendorsSummary ? `- Vendors & Bookings: ${eventContext.vendorsSummary}` : ""}
 
-GUIDELINES FOR YOUR RESPONSES:
-1. Provide concrete, highly practical, and actionable advice tailored to their specific event type, guest count, and budget.
-2. If discussing budgets, give realistic dollar allocations or percentages.
-3. If discussing timelines, recommend realistic lead times.
-4. If discussing vendors, suggest what questions to ask or negotiation tactics.
-5. Keep your tone encouraging, sophisticated, organized, and clear. Format with bullet points or short paragraphs for readability.`;
+CRITICAL FORMATTING RULES:
+1. NEVER USE ASTERISKS: Do not use asterisks for bolding, italics, or bullets (no **bold**, no *italic*, no * bullets). Asterisks are strictly prohibited.
+2. ANSWER IN CLEAR POINTS: Structure your entire response in clear, concise bullet points (using "• ") or numbered points (1., 2., 3.).
+3. ACTIONABLE & SPECIFIC: Provide concrete figures, realistic timeline lead-times, and specific vendor tips tailored to this event.
+4. Keep each point focused and easy to read.`;
 
   const formattedMessages: ChatMessage[] = [
     { role: "system", content: systemPrompt },
@@ -74,7 +104,7 @@ GUIDELINES FOR YOUR RESPONSES:
     body: JSON.stringify({
       model,
       messages: formattedMessages,
-      temperature: 0.7,
+      temperature: 0.6,
       max_tokens: 600,
     }),
   });
@@ -86,11 +116,12 @@ GUIDELINES FOR YOUR RESPONSES:
   }
 
   const data = await response.json();
-  const assistantReply = data.choices?.[0]?.message?.content;
+  const rawReply = data.choices?.[0]?.message?.content;
 
-  if (!assistantReply) {
+  if (!rawReply) {
     throw new Error("No content received from OpenRouter API");
   }
 
-  return assistantReply;
+  // Refine and clean output to guarantee no asterisks and clean points
+  return cleanAndRefinePoints(rawReply);
 }
