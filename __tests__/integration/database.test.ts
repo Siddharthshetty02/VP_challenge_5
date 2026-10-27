@@ -37,6 +37,23 @@ describe("Database Repository Integration", () => {
     assert.equal(fetched?.id, createdEventId);
   });
 
+  test("updates event parameters and lifecycle status", () => {
+    const updated = dbRepository.updateEvent(createdEventId, {
+      totalBudget: 4500,
+      guestCount: 35,
+      status: "IN_PROGRESS",
+    });
+
+    assert.ok(updated);
+    assert.equal(updated.totalBudget, 4500);
+    assert.equal(updated.guestCount, 35);
+    assert.equal(updated.status, "IN_PROGRESS");
+
+    const reFetched = dbRepository.getEventById(createdEventId);
+    assert.equal(reFetched?.status, "IN_PROGRESS");
+    assert.equal(reFetched?.totalBudget, 4500);
+  });
+
   test("manages budget items for the event", () => {
     const item = dbRepository.createBudgetItem({
       eventId: createdEventId,

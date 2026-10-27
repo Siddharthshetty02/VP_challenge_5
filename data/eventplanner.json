@@ -431,31 +431,31 @@
       "id": "m-f4595d64",
       "eventId": "event-birthday-02",
       "title": "Select Theme & Book Private Party Space",
-      "description": "Confirm date, headcount estimate, and venue deposit.",
+      "description": "",
       "dueDate": "2026-09-23T20:00:00.000Z",
-      "completed": false,
+      "completed": true,
       "phase": "INITIAL",
-      "sortOrder": 1
+      "sortOrder": 0
     },
     {
       "id": "m-77a16e3a",
       "eventId": "event-birthday-02",
       "title": "Lock in DJ, Bartender & Photo Booth",
-      "description": "Send playlist preferences and drink ingredient requests.",
+      "description": "",
       "dueDate": "2026-10-08T20:00:00.000Z",
       "completed": false,
       "phase": "BOOKING",
-      "sortOrder": 2
+      "sortOrder": 0
     },
     {
       "id": "m-07dc1301",
       "eventId": "event-birthday-02",
       "title": "Send Digital Invitations with RSVP Link",
-      "description": "Collect music song requests and dietary preferences.",
+      "description": "",
       "dueDate": "2026-10-17T20:00:00.000Z",
-      "completed": false,
+      "completed": true,
       "phase": "PREPARATION",
-      "sortOrder": 3
+      "sortOrder": 0
     },
     {
       "id": "m-26b5e340",
@@ -663,6 +663,14 @@
     }
   ],
   "aiSuggestions": [
+    {
+      "id": "ai-f17980da",
+      "eventId": "event-birthday-02",
+      "type": "idea",
+      "content": "{\"creativeIdeas\":[{\"title\":\"Bespoke Birthday Cocktail Flight\",\"description\":\"Three mini craft cocktails themed after milestones from the celebrant's life.\",\"estimatedCost\":250,\"category\":\"Food & Drink\"},{\"title\":\"Illuminated Custom Neon Backdrop\",\"description\":\"Bright neon quote sign set against a lush greenery wall for viral social media photos.\",\"estimatedCost\":350,\"category\":\"Decor\"},{\"title\":\"Midnight Snack Delivery Surprise\",\"description\":\"Surprise hot late-night mini burger sliders or churros brought out on neon trays.\",\"estimatedCost\":300,\"category\":\"Food & Drink\"}],\"signatureDrinkOrSnack\":\"Neon Cyber Citrus Fizz\",\"recommendedColorPalette\":[\"#6366f1\",\"#ec4899\",\"#f59e0b\",\"#10b981\"],\"playlistVibe\":\"Curated ambient lounge into celebratory peak-hour anthems\",\"source\":\"fallback\"}",
+      "prompt": "Ideas for BIRTHDAY: An electrifying neon-cyberpunk milestone 30th bash with synthwave DJ, bespoke neon cocktail bar, holographic photo booth, and futuristic street food skewers.",
+      "createdAt": "2026-10-26T17:11:51.922Z"
+    },
     {
       "id": "ai-6fa278ed",
       "eventId": "event-birthday-02",

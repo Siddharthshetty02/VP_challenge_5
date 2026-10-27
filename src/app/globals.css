@@ -477,3 +477,41 @@ body {
     scroll-behavior: auto !important;
   }
 }
+
+/* Print Stylesheet for PDF & Print-Friendly Event Plans */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  .navbar,
+  .tabs-nav,
+  .skip-link,
+  .btn,
+  .modal-overlay,
+  nav[aria-label="Breadcrumb"] {
+    display: none !important;
+  }
+  .card {
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    color: #0f172a !important;
+    box-shadow: none !important;
+    break-inside: avoid;
+    margin-bottom: 1.5rem !important;
+  }
+  .app-container {
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+  h1, h2, h3, p, span, td, th {
+    color: #0f172a !important;
+  }
+  table {
+    border: 1px solid #cbd5e1 !important;
+  }
+  th, td {
+    border-bottom: 1px solid #e2e8f0 !important;
+  }
+}
+
